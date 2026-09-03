@@ -21,7 +21,6 @@ If your plan does not allow Claude to add the connector for you, use developer m
 | `manifest.json` | App manifest (v1.29) |
 | `declarativeAgent.json` | Agent definition with instructions and conversation starters (v1.8) |
 | `color.png`, `outline.png` | App icons |
-| `humantic-ai-copilot.zip` | The same files packaged for Microsoft 365 Copilot sideloading |
 
 ## What you can do
 
