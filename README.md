@@ -1,16 +1,27 @@
-# Humantic AI for Microsoft 365 Copilot
+# Humantic AI Connector
 
-This repo hosts the installable agent package that connects Microsoft 365 Copilot to Humantic's MCP server (https://mcp.humantic.ai/mcp).
+This repo hosts the Humantic AI connector definition files, so you can install the Humantic connector into your Claude account directly from this repo, without downloading anything.
 
-Use it when your Microsoft 365 tenant does not allow adding custom connectors or agents from the store, and sideloading is the only path.
+The connector connects Claude to Humantic's MCP server (https://mcp.humantic.ai/mcp).
 
-## Install
+## Install in Claude
 
-1. Download `humantic-ai-copilot.zip` from this repo (open the file, then click Download).
-2. Open Microsoft Teams (desktop or web).
-3. Go to **Apps** > **Manage your apps** > **Upload an app** > **Upload a custom app**.
-4. Select the downloaded `humantic-ai-copilot.zip`.
-5. Open Microsoft 365 Copilot, select the **Humantic AI MCP** agent, and start a chat. You will be prompted to sign in with your Humantic account the first time.
+1. Open Claude (claude.ai).
+2. Paste this repo link into the chat: https://github.com/dakshan-hai/humantic-ai-copilot
+3. Ask Claude to install the Humantic AI connector from this repo into your account.
+4. Approve the prompts, and sign in with your Humantic account when asked.
+
+If your plan does not allow Claude to add the connector for you, use developer mode: download `ai-plugin.json` and `manifest.json` from this repo and upload them there.
+
+## Files
+
+| File | Purpose |
+| --- | --- |
+| `ai-plugin.json` | Connector/plugin definition, points Claude at the Humantic MCP server |
+| `manifest.json` | App manifest (v1.29) |
+| `declarativeAgent.json` | Agent definition with instructions and conversation starters (v1.8) |
+| `color.png`, `outline.png` | App icons |
+| `humantic-ai-copilot.zip` | The same files packaged for Microsoft 365 Copilot sideloading |
 
 ## What you can do
 
@@ -19,18 +30,8 @@ Use it when your Microsoft 365 tenant does not allow adding custom connectors or
 
 ## Requirements
 
-- A Microsoft 365 Copilot license.
 - A Humantic subscription. Usage draws on your existing Humantic credits.
-- Your Teams admin must allow **Upload custom apps** (sideloading) in the Teams admin center. If the upload option is missing, ask your IT admin to enable it.
-
-## Package contents
-
-| File | Purpose |
-| --- | --- |
-| `manifest.json` | Teams app manifest (v1.29) |
-| `declarativeAgent.json` | Copilot declarative agent definition (v1.8) |
-| `ai-plugin.json` | MCP server plugin definition (v2.4) |
-| `color.png`, `outline.png` | App icons |
+- If your plan restricts custom connectors, use the developer-mode path above or ask your admin.
 
 ## Support
 

@@ -1,0 +1,40 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.29/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.29",
+    "version": "1.0.0",
+    "id": "099496b8-2a99-4f04-b303-762f245c9c1f",
+    "developer": {
+        "name": "Humantic AI, Inc.",
+        "websiteUrl": "https://humantic.ai",
+        "privacyUrl": "https://humantic.ai/privacy",
+        "termsOfUseUrl": "https://humantic.ai/tos"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Humantic AI MCP",
+        "full": "Humantic AI MCP"
+    },
+    "description": {
+        "short": "Buyer intelligence for sellers: prospect personality and account research.",
+        "full": "Humantic AI brings our Buyer Intelligence platform into Microsoft 365 Copilot. As one of the agents for Microsoft Copilot, it lets your team, in conversation, understand any prospect's DISC personality from a LinkedIn profile or work email (Agent Pi), generate deep account-research reports on target companies with buyer-intent signals (Agent Miia), and draft outreach matched to a recipient's personality. It connects Copilot directly to Humantic's own platform, not a third-party connector. A Humantic subscription is required; usage draws on your existing Humantic credits. Get started and sign up at https://account.humantic.ai/. For help or support, contact help@humantic.ai."
+    },
+    "accentColor": "#FEBE10",
+    "supportsChannelFeatures": "tier1",
+    "composeExtensions": [],
+    "copilotAgents": {
+        "declarativeAgents": [
+            {
+                "id": "declarativeAgent",
+                "file": "declarativeAgent.json"
+            }
+        ]
+    },
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}
