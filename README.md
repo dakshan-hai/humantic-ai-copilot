@@ -7,7 +7,7 @@ The connector connects Claude to Humantic's MCP server (https://mcp.humantic.ai/
 ## Install in Claude
 
 1. Open Claude (claude.ai).
-2. Paste this repo link into the chat: https://github.com/dakshan-hai/humantic-ai-copilot
+2. Paste this repo link into the chat: https://github.com/humantic-ai-inc/humantic-ai-copilot
 3. Ask Claude to install the Humantic AI connector from this repo into your account.
 4. Approve the prompts, and sign in with your Humantic account when asked.
 
